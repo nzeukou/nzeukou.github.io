@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armand Nzeukou Takougang — Physique de l'atmosphère</title>
+<meta name="description" content="Pr Armand Cyrille Nzeukou Takougang, Professeur des Universités à l'Université de Dschang (IUT-FV de Bandjoun). Physique des nuages et des précipitations, radar météorologique, télédétection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16242f; --muted:#5a6b78; --line:#dde4e8; --bg:#f7f9fa; --card:#fff;
+  --accent:#0f5e7a; --accent-soft:#e3f0f4; --max:980px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+nav{position:sticky;top:0;z-index:10;background:rgba(247,249,250,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:18px;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:12px;padding-bottom:12px}
+nav strong{font-family:Fraunces,serif;margin-right:auto;padding-right:12px}
+nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500}
+nav a:hover{color:var(--accent)}
+
+header.hero{background:linear-gradient(160deg,#0c3c50,#0f5e7a 60%,#2c8aa3);color:#fff;padding:64px 0 56px}
+.hero .wrap{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+.photo{width:150px;height:150px;border-radius:50%;flex:none;background:rgba(255,255,255,.15);border:3px solid rgba(255,255,255,.6);display:grid;place-items:center;font-family:Fraunces,serif;font-size:44px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.hero-text{flex:1;min-width:260px}
+.hero .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;opacity:.85;margin:0 0 10px}
+.hero h1{font-size:clamp(30px,5vw,46px)}
+.hero p.lead{font-size:18px;max-width:620px;margin:14px 0 22px;opacity:.95}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;background:#fff;color:var(--accent)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.7)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-28px;position:relative}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;box-shadow:0 4px 14px rgba(15,60,80,.06)}
+.stat b{display:block;font-family:Fraunces,serif;font-size:28px;color:var(--accent)}
+.stat span{font-size:13px;color:var(--muted)}
+
+section{padding:56px 0 8px}
+section h2{font-size:28px;margin-bottom:22px;padding-bottom:10px;border-bottom:2px solid var(--accent);display:inline-block}
+.grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:32px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{background:var(--accent-soft);color:var(--accent);padding:6px 12px;border-radius:999px;font-size:13.5px;font-weight:500}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:17px;margin-bottom:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.card.wide{grid-column:1/-1;border-left:4px solid var(--accent)}
+.card.wide p{margin-bottom:8px}
+.card ul{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:14.5px}
+.card li{margin-bottom:6px}
+.card li strong,.card p strong{color:var(--ink)}
+.card .yr{font-size:12.5px;font-weight:600;color:var(--accent);letter-spacing:.04em;display:block;margin-bottom:6px}
+
+.timeline{border-left:2px solid var(--line);margin-left:6px;padding-left:24px}
+.item{position:relative;margin-bottom:26px}
+.item::before{content:"";position:absolute;left:-31px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.item .yr{font-size:13px;font-weight:600;color:var(--accent)}
+.item h3{font-size:18px;margin:2px 0 4px}
+.item p,.item ul{margin:4px 0 0;color:var(--muted);font-size:15px}
+.item ul{padding-left:18px}
+
+.pub-theme{font-size:19px;margin:28px 0 10px}
+ol.pubs{list-style:none;padding:0;margin:0}
+ol.pubs li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:8px;font-size:14.5px}
+ol.pubs .t{font-weight:600;display:block}
+ol.pubs .a{color:var(--muted)}
+ol.pubs .j{font-style:italic}
+.cite{float:right;margin-left:12px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px}
+
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:6px}
+.filters input[type=search],.filters select,.filters button{font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);max-width:100%}
+.filters input[type=search]{flex:1 1 240px;min-width:0}
+.filters select{flex:0 1 auto;min-width:0}
+.filters button{cursor:pointer;color:var(--accent);font-weight:600}
+.filters .chk{font-size:14px;display:flex;align-items:center;gap:6px}
+#f-count{margin-left:auto;font-size:13.5px;font-weight:600;color:var(--accent)}
+.pub-theme small{font-family:Inter,sans-serif;font-size:13px;font-weight:500;color:var(--muted)}
+.none{color:var(--muted);padding:20px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{white-space:nowrap;color:var(--accent);font-weight:600;width:150px}
+
+footer{margin-top:64px;background:#0c3c50;color:#fff;padding:44px 0}
+footer h2{color:#fff;border:0;font-size:26px;margin-bottom:12px}
+footer a{color:#fff}
+footer small{display:block;margin-top:24px;opacity:.7}
+
+@media(max-width:720px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid2{grid-template-columns:1fr}
+  td:first-child{white-space:normal;width:95px}
+  .hero{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <strong>A. Nzeukou</strong>
+  <a href="#apropos">À propos</a>
+  <a href="#parcours">Parcours</a>
+  <a href="#projets">Projets</a>
+  <a href="#publications">Publications</a>
+  <a href="#mobilite">Séjours</a>
+  <a href="#conferences">Conférences</a>
+  <a href="#contact">Contact</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="photo">
+    <!-- Placez votre photo sous le nom photo.jpg à côté de ce fichier -->
+    <img src="photo.jpg" alt="Portrait d'Armand Nzeukou" onerror="this.replaceWith('AN')">
+  </div>
+  <div class="hero-text">
+    <p class="kicker">Professeur des Universités · Université de Dschang</p>
+    <h1>Armand Cyrille Nzeukou Takougang</h1>
+    <p class="lead">Physicien de l'atmosphère. J'étudie les nuages et les précipitations en Afrique de l'Ouest et centrale à l'aide du radar, du disdromètre, du satellite et des réseaux de télécommunication.</p>
+    <div class="btns">
+      <a class="btn" href="#publications">Voir les publications</a>
+      <a class="btn ghost" href="mailto:armand.nzeukou@univ-dschang.org">Me contacter</a>
+    </div>
+  </div>
+</div></header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>30 ans</b><span>d'enseignement et de recherche</span></div>
+    <div class="stat"><b id="npub">62</b><span>publications</span></div>
+    <div class="stat"><b>6</b><span>projets financés</span></div>
+    <div class="stat"><b>4 pays</b><span>de séjours scientifiques</span></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+<section id="apropos">
+  <h2>À propos</h2>
+  <div class="grid2">
+    <div>
+      <p>Je suis Professeur des Universités à l'<strong>IUT Fotso Victor de Bandjoun</strong> (Université de Dschang, Cameroun), au Département des Enseignements Généraux et Scientifiques, où j'enseigne et dirige des recherches depuis 1996.</p>
+      <p>Formé à Dakar puis à Toulouse (doctorat et HDR à l'Université Paul Sabatier), je travaille sur la <strong>physique des nuages et des précipitations</strong> : distribution des gouttes de pluie, étalonnage radar, propagation des micro-ondes dans la pluie et variabilité intrasaisonnière du climat en Afrique centrale. Je dirige depuis 2009 l'équipe de télédétection spatiale du <em>Laboratory of Engineering for Industrial Systems and Environment</em>.</p>
+      <p>Mes travaux récents s'ouvrent à l'apprentissage profond pour la prévision hydrologique aux réseaux de capteurs sans fil, aux systèmes dynamiques chaotiques et à la communication par lumière visible.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;margin-bottom:12px">Thèmes de recherche</h3>
+      <ul class="tags">
+        <li>Microphysique des nuages</li>
+        <li>Précipitations</li>
+        <li>Radar météorologique</li>
+        <li>Disdrométrie</li>
+        <li>Télédétection satellitaire</li>
+        <li>Processus convectifs</li>
+        <li>Propagation micro-onde</li>
+        <li>Modélisation numérique</li>
+        <li>Interactions nuages–rayonnement</li>
+      </ul>
+      <h3 style="font-size:17px;margin:22px 0 12px">Enseignements</h3>
+      <ul class="tags">
+        <li>Traitement du signal</li>
+        <li>Télédétection</li>
+        <li>Électromagnétisme</li>
+        <li>Optique géométrique</li>
+        <li>Mécanique vibratoire</li>
+        <li>Statistiques</li>
+        <li>Outils mathématiques</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="parcours">
+  <h2>Parcours</h2>
+  <div class="grid2">
+    <div>
+      <h3 class="pub-theme" style="margin-top:0">Carrière académique</h3>
+      <div class="timeline">
+        <div class="item"><span class="yr">2015 – aujourd'hui</span><h3>Professeur des Universités</h3><p>Université de Dschang. Direction de thèses et de mémoires de master, coordination de projets financés par des agences nationales et internationales.</p></div>
+        <div class="item"><span class="yr">2007 – 2015</span><h3>Maître de Conférences</h3><p>Université de Dschang. Physique générale et télédétection, direction de thèses de doctorat.</p></div>
+        <div class="item"><span class="yr">2001 – 2007</span><h3>Chargé de Cours</h3><p>Université de Dschang. Physique générale, encadrement de mémoires et de projets de fin d'études.</p></div>
+        <div class="item"><span class="yr">1996 – 2001</span><h3>Assistant</h3><p>Université de Dschang. Travaux pratiques et dirigés.</p></div>
+      </div>
+
+      <h3 class="pub-theme">Formation</h3>
+      <div class="timeline">
+        <div class="item"><span class="yr">2006</span><h3>Habilitation à Diriger des Recherches</h3><p>Université Paul Sabatier, Toulouse — <em>Propagation micro-onde et variabilité spatiale et à moyenne échelle des champs de précipitation en Afrique de l'Ouest.</em></p></div>
+        <div class="item"><span class="yr">2002</span><h3>Doctorat en Physique de l'atmosphère</h3><p>Université Paul Sabatier, Toulouse — <em>Variabilité spatiale à moyenne échelle des conditions de propagation des micro-ondes dans les précipitations.</em></p></div>
+        <div class="item"><span class="yr">1997</span><h3>Doctorat de 3<sup>e</sup> cycle en Physique de l'atmosphère</h3><p>Université Cheikh Anta Diop, Dakar — <em>Microphysique et structure des précipitations sur les côtes sénégalo-gambiennes ; étalonnage du radar météorologique de Dakar-Yoff.</em></p></div>
+        <div class="item"><span class="yr">1994</span><h3>DEA Contrôle et Modélisation des Processus Industriels</h3><p>Université de Marne-la-Vallée.</p></div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="pub-theme" style="margin-top:0">Responsabilités à l'IUT-FV de Bandjoun</h3>
+      <div class="card">
+        <table>
+          <tr><td>Depuis le 6 janv. 2026</td><td>Chef du Département de Génie Civil (par intérim), cumulativement avec la Division des Stages</td></tr>
+          <tr><td>Depuis 2014</td><td>Responsable de l'outil de programmation dynamique des salles, du matériel pédagogique et des emplois du temps</td></tr>
+          <tr><td>Depuis 2013</td><td>Chef de la Division des Stages, de la Formation Permanente et des Relations avec les Milieux Socio-Professionnels</td></tr>
+          <tr><td>Depuis 2013</td><td>Responsable du parcours de Licence en Génie Géomatique</td></tr>
+          <tr><td>Depuis 2009</td><td>Chef de l'équipe de recherche en télédétection spatiale (LEISE)</td></tr>
+          <tr><td>Depuis 2006</td><td>Tuteur en Formation Ouverte et À Distance (FOAD)</td></tr>
+          <tr><td>2006 – 2013</td><td>Chef du Département des Enseignements Généraux et Scientifiques</td></tr>
+          <tr><td>2003 – 2006</td><td>Chef de la Cellule Informatique (par intérim)</td></tr>
+        </table>
+      </div>
+      <h3 class="pub-theme">Activités scientifiques</h3>
+      <div class="card"><p>Relecteur pour <em>Atmospheric Science Letters</em> et <em>Geophysical Research Letters</em>. Membre régulier de jurys de thèse.</p></div>
+      <h3 class="pub-theme">Langues</h3>
+      <div class="card"><p>Français (langue maternelle) · Anglais (intermédiaire)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <h2>Projets de recherche et de formation</h2>
+  <div class="cards">
+    <div class="card wide"><span class="yr">2026 – 2029 · 36 mois · En cours</span><h3>TERRASCAPE — Projet européen Erasmus+</h3>
+      <p><strong>Membre du Groupe de Travail</strong>, Université de Dschang. Consortium international : France, Espagne, Cameroun, Sénégal, Côte d'Ivoire.</p>
+      <p>Renforcement des capacités et modernisation des formations supérieures en télédétection et géomatique (financement de la Commission européenne).</p>
+      <ul>
+        <li><strong>Ingénierie pédagogique :</strong> participation à l'analyse diagnostique (SWOT), à la révision des maquettes d'enseignement et à l'intégration de nouveaux modules numériques (Python, IA, traitement d'images satellites).</li>
+        <li><strong>Gestion et coordination technique :</strong> membre du Comité Technique (CoTec), suivi des livrables pédagogiques et mise en place de la plateforme numérique de mutualisation des contenus (LMS).</li>
+        <li><strong>Collaboration internationale :</strong> participation aux réunions de pilotage, à la mutualisation d'équipements scientifiques (drones, Lidar) et aux formations de formateurs.</li>
+      </ul>
+    </div>
+    <div class="card"><span class="yr">2017 – 2020</span><h3>SMART — Data4Development</h3><p>Suivi de l'atmosphère et de la pluie au Cameroun à partir du réseau de télécommunication (<em>Smart Monitoring of the Atmosphere and Rain using Telecommunication network</em>).</p></div>
+    <div class="card"><span class="yr">2004 – 2005</span><h3>FIRMA II-B</h3><p>Caractérisation des précipitations en Afrique subtropicale par radar et disdromètre. Universités de Dschang, Yaoundé I et Toulouse III (Laboratoire d'Aérologie).</p></div>
+    <div class="card"><span class="yr">2002 – 2005</span><h3>CAMPUS / CORUS</h3><p>Régime des précipitations et ressources en eau du Sénégal par radar et satellite, avec le LPAO-SF de l'Université de Dakar.</p></div>
+    <div class="card"><span class="yr">1997 – 2004</span><h3>AIRE Développement</h3><p>Estimation des précipitations par radar et satellite, avec le LPAO-SF de l'Université de Dakar.</p></div>
+    <div class="card"><span class="yr">1996 – 1997</span><h3>FIRMA I</h3><p>Étalonnage du radar de Dakar-Yoff (Sénégal), LPAO-SF.</p></div>
+  </div>
+
+  <h3 class="pub-theme">Campagnes de terrain</h3>
+  <div class="card">
+    <table>
+      <tr><td>2006 · Sénégal</td><td>Campagne SOP3 du programme international AMMA : suivi des acquisitions du radar polarimétrique Doppler NPOL installé à Kawsara, avec l'équipe du LPAO-SF et des chercheurs américains.</td></tr>
+      <tr><td>2003 – 2007 · Cameroun</td><td>Mise en place du premier système d'acquisition disdrométrique à Zoétélé et Debuncha, avec le Laboratoire d'Aérologie.</td></tr>
+      <tr><td>1997 · Sénégal</td><td>Campagnes de mesure de pluie avec le réseau de pluviographes du LPAO-SF et le radar bande C de l'aéroport de Dakar-Yoff.</td></tr>
+      <tr><td>1993 – 1997 · Sénégal</td><td>Mise en place à Dakar du premier dispositif d'acquisition disdrométrique de type JWD.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <p style="color:var(--muted);margin-top:-8px">Classées par thème, des plus récentes aux plus anciennes ; le nombre de citations (Google Scholar, octobre 2026) est indiqué à droite. Profil complet sur <a href="https://scholar.google.com/citations?user=3IQ_c6cAAAAJ&hl=fr" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  <div class="filters">
+    <input id="f-q" type="search" placeholder="Rechercher un titre, un auteur, une revue…" aria-label="Rechercher dans les publications">
+    <select id="f-theme" aria-label="Thème"></select>
+    <select id="f-period" aria-label="Période">
+      <option value="">Toutes les années</option>
+      <option value="2020-2100">2020 – aujourd'hui</option>
+      <option value="2010-2019">2010 – 2019</option>
+      <option value="2000-2009">2000 – 2009</option>
+      <option value="1900-1999">Avant 2000</option>
+    </select>
+    <select id="f-sort" aria-label="Tri">
+      <option value="new">Plus récentes d'abord</option>
+      <option value="old">Plus anciennes d'abord</option>
+      <option value="cit">Plus citées d'abord</option>
+    </select>
+    <label class="chk"><input id="f-first" type="checkbox"> Premier auteur</label>
+    <button id="f-reset" type="button">Réinitialiser</button>
+    <span id="f-count"></span>
+  </div>
+  <div id="publist"></div>
+</section>
+
+<section id="mobilite">
+  <h2>Séjours de recherche</h2>
+  <div class="card">
+    <table>
+      <tr><td>1998 – 2010</td><td><strong>Laboratoire d'Aérologie, Observatoire Midi-Pyrénées, Toulouse (France)</strong><br>Sept séjours : préparation du doctorat (1998-2002), école d'été AMMA (2003), caractérisation des champs de pluie et données radar (2004, 2005), analyse des données AMMA du Sénégal (2006), données pluviographiques, disdrométriques et radar (2008, 2010).</td></tr>
+      <tr><td>2012</td><td><strong>IUT d'Alsace (France)</strong><br>Élaboration du programme de la Licence en Génie Géomatique.</td></tr>
+      <tr><td>2002, 2006</td><td><strong>LPAO-SF, Université de Dakar (Sénégal)</strong><br>Projet AIRE Développement et encadrement de doctorants (2002) ; post-doctorat AUF : réseau de pluviographes, campagne AMMA et données disdrométriques de Debuncha (2006).</td></tr>
+      <tr><td>2003</td><td><strong>ACMAD, Niamey (Niger)</strong><br>Premier atelier ESOPE-01 : montage de projets, publication scientifique et valorisation des résultats.</td></tr>
+      <tr><td>2002</td><td><strong>ICTP, Trieste (Italie)</strong><br>Troisième École internationale de radar atmosphérique.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="conferences">
+  <h2>Conférences</h2>
+  <div class="card">
+    <table>
+      <tr><td>2013 · Trieste</td><td>Tchakoutio A.S., <strong>Nzeukou A.</strong>, Tchawoua C. — <em>A comparative analysis of intraseasonal variability in OLR and 1DD GPCP data over Central Africa.</em> Workshop « Weather Regimes and Weather Types in the Tropics and Extra-tropics ».</td></tr>
+      <tr><td>2012 · Toulouse</td><td>Tchakoutio A.S., <strong>Nzeukou A.</strong>, Tchawoua C. — <em>Intraseasonal atmospheric variability and its interannual modulation in central Africa.</em> 4<sup>e</sup> Conférence AMMA.</td></tr>
+      <tr><td>2009 · Dakar</td><td>Tchakoutio A.S., <strong>Nzeukou A.</strong> — <em>Estimation des précipitations au Cameroun à partir des données du satellite METEOSAT 7.</em> École d'été AMMA « Climate change and water resources ».</td></tr>
+      <tr><td>2009 · Ouagadougou</td><td><strong>Nzeukou A.</strong>, Vondou D., Mkankam F. — <em>Diurnal cycle patterns of cloudiness in summer over Central Africa.</em> 3<sup>e</sup> Conférence AMMA.</td></tr>
+      <tr><td>2007 · Yaoundé</td><td>Vondou D.A., <strong>Nzeukou A.</strong>, Mkankam F.K., Djiotang L.A.T., Pokam M.W. — <em>Interannual variability of diurnal cycle of convection over Cameroon.</em> Conference on Central Africa, Cameroon and Global Change.</td></tr>
+      <tr><td>2006 · Toulouse</td><td>Réunion de bilan de la période d'observation AMMA 2006 (campagnes EGEE3 et METEOR).</td></tr>
+      <tr><td>2005 · Dakar</td><td>Première conférence internationale AMMA (Analyse Multidisciplinaire de la Mousson Africaine).</td></tr>
+      <tr><td>2003 · Cotonou</td><td>Séminaire international COPROMAPH, session AMMA.</td></tr>
+      <tr><td>2002 · Toulouse</td><td>Sauvageot H., Mesnard F., <strong>Nzeukou A.</strong>, Tenorio S. — <em>Estimation de la pluie moyenne sur une aire à partir de l'observation spatiale de la taille des cellules.</em> Atelier sur les instruments de mesure des précipitations.</td></tr>
+      <tr><td>2002 · Madrid</td><td><strong>Nzeukou A.</strong>, Sauvageot H. — <em>Spatio-temporal stationarity of the mean rainfall.</em> 1<sup>re</sup> réunion de l'International Precipitation Working Group (IPWG).</td></tr>
+    </table>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p>Pr Armand Cyrille Nzeukou Takougang<br>
+  IUT Fotso Victor — Département des Enseignements Généraux et Scientifiques<br>
+  Université de Dschang, BP 134 Bandjoun, Cameroun</p>
+  <p><a href="mailto:armand.nzeukou@univ-dschang.org">armand.nzeukou@univ-dschang.org</a></p>
+  <p><a href="https://scholar.google.com/citations?user=3IQ_c6cAAAAJ&hl=fr" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://orcid.org/0000-0001-6372-5058" target="_blank" rel="noopener">ORCID 0000-0001-6372-5058</a></p>
+  <small>© <span id="y"></span> Armand Nzeukou Takougang</small>
+</div></footer>
+
+<script>
+const P = [
+ ["Précipitations, radar, disdrométrie et liens micro-ondes", [
+  ["Parametrization of drop size distribution with rain rate for microwave and millimeter wave applications in Central Africa","PH Ntanguen, A Nzeukou, R Onguene, AT Sandjon, R Sonfack","Indian Journal of Physics, 97(10), 2865-2870",2023,2],
+  ["Short-term rainfall prediction using MLA based on commercial microwave links of mobile telecommunication networks","EV Kamtchoum, ACN Takougang, CT Djamegni","Bulletin of Atmospheric Science and Technology, 3(1), 5",2022,6],
+  ["Using Machine Learning Techniques for Rainfall Estimation Based on Microwave Links of Mobile Telecommunication Networks","EV Kamtchoum, AC Nzeukou Takougang, CT Djamegni","SN Computer Science, 4(1), 46",2022,3],
+  ["A machine learning approach for the classification of wet and dry periods using commercial microwave link data","EV Kamtchoum, AC Nzeukou Takougang, C Tayou Djamegni","SN Computer Science, 3(3), 227",2022,7],
+  ["Raindrop size distribution and rainfall attenuation modeling from disdrometer measurement in Central Africa: Case of Cameroon","PH Ntanguen, A Nzeukou, AT Sandjon","Progress In Electromagnetics Research C, 121, 243-253",2022,3],
+  ["Seasonal variations of surface duct conditions in Ngaoundere, North Cameroon","S Kaissassou, A Lenouo, A Nzeukou, C Tchawoua, DA Vondou","Meteorology and Atmospheric Physics, 127(6), 659-674",2015,14],
+  ["Performance of using cascade forward back propagation neural networks for estimating rain parameters with rain drop size distribution","S Tengeleng, A Nzeukou","Atmosphere, 5(2), 454-472",2014,30],
+  ["Parametrization of drop size distribution with rain rate","AD Ochou, A Nzeukou, H Sauvageot","Atmospheric Research, 84(1), 58-66",2007,45],
+  ["Rain rate and attenuation statistics along paths in a tropical coastal area from radar data","A Nzeukou, H Sauvageot, L Féral","Radio Science, 41(2), 1-12",2006,3],
+  ["The relation between rainfall and area–time integrals at the transition from an arid to an equatorial climate","CMF Kebe, H Sauvageot, A Nzeukou","Journal of Climate, 18(18), 3806-3819",2005,17],
+  ["Raindrop size distribution and radar parameters at Cape Verde","A Nzeukou, H Sauvageot, AD Ochou, CMF Kebe","Journal of Applied Meteorology, 43(1), 90-105",2004,138],
+  ["Étude de la stationnarité du champ de précipitation sur la côte sénégalaise","A Nzeukou, H Sauvageot, F Kebe, D Badiane","Publications de l'Association internationale de climatologie, 15, 402-409",2003,null],
+  ["Ergodicité du champ de précipitations sur la côte sénégalaise","A Nzeukou, H Sauvageot, F Kebe, D Badiane","Télédétection, 3, 281-290",2003,null],
+  ["Ergodicity of hailfall on the Senegalese Coast","A Nzeukou, H Sauvageot","3rd Workshop on Contemporary Problems in Mathematical Physics",2003,null],
+  ["Distribution of rainfall parameters near the coasts of France and Senegal","A Nzeukou, H Sauvageot","Journal of Applied Meteorology, 41(1), 69-82",2002,42],
+  ["Statistique de précipitations en zone côtière sur des trajectoires rectilignes à l'aide de données radar : cas de Bordeaux et Dakar","A Nzeukou, H Sauvageot, S Fongang","Publications de l'Association internationale de climatologie, 12, 245-251",1999,null]
+ ]],
+ ["Convection et variabilité climatique en Afrique centrale", [
+  ["Impact of the 25-70 day intraseasonal oscillation on extreme rainfall distribution over Central Africa","CW Tchinda, AT Sandjon, ALD Tchotchou, DA Vondou, A Nzeukou","Journal of the European Meteorological Society, 4, 100035",2026,3,"10.1016/j.jemets.2026.100035"],
+  ["Study the impact of intraseasonal oscillations on water vapour transport in Central Africa: The case of 25–70 day oscillations","AN Siwe, AT Sandjon, LAD Tchotchou, CW Tchinda, DA Vondou, A Nzeukou","International Journal of Climatology, 46(1), e70150",2026,2,"10.1002/joc.70150"],
+  ["Recent inter-seasonal variability of EDW in the North Atlantic using Volume Index","BR Sonfack, G Mpame, A Nzeukou, C Kenfack-Sadem, AT Sandjon","",2024,null],
+  ["The influence of intraseasonal oscillations on rainfall variability over Central Africa: case of the 25–70 days variability","C Wamba Tchinda, A Tchakoutio Sandjon, AL Djiotang Tchotchou, et al.","Scientific Reports, 13(1), 19842",2023,15],
+  ["On the study of seasonal patterns of 25–70-day intraseasonal oscillations in Central Africa","AT Sandjon, ALD Tchotchou, DA Vondou, AJK Mbienda, RS Tanessong, et al.","Modeling Earth Systems and Environment, 8(1), 417-434",2022,3],
+  ["On the computation of ISO amplitude and frequency indices using a discrete wavelet transform model and application to the study of the annual cycle of ISO activity in Central Africa","AT Sandjon, AN Takougang, Y Ibouraïma, DA Vondou, ALD Tchotchou","Bulletin of Atmospheric Science and Technology, 2(1), 6",2021,null],
+  ["On the variations in the frequency of 25–70-day intraseasonal oscillations in Central Africa using wavelet-based indices","AT Sandjon, ALD Tchotchou, DA Vondou, AJK Mbienda, GM Guenang, et al.","SN Applied Sciences, 3(3), 304",2021,4],
+  ["Interannual variations in the amplitude of 25–70-day intraseasonal oscillations in Central Africa and relationship with ENSO","AT Sandjon, CW Tchinda, DA Vondou, A Nzeukou, WP Mba","Bulletin of Atmospheric Science and Technology, 1(3), 387-405",2020,9],
+  ["On the Study of the Spatio-Temporal Variations in Intensity of 30–60-Day Intraseasonal Rainfall Oscillations in Central Africa Using Wavelet-Based Indices","AT Sandjon, A Nzeukou","Journal of Geoscience and Environment Protection, 8(2), 15-32",2020,1],
+  ["On convection and static stability during the AMMA SOP3 campaign","GB Embolo Embolo, A Lenouo, A Nzeukou, DA Vondou, FM Kamga","Theoretical and Applied Climatology, 127(1), 197-211",2017,4],
+  ["On the annual variations in the amplitude of 25-70-day intraseasonal atmospheric oscillations in Central Africa","AT Sandjon, A Nzeukou","Earth, 5(3), 39-47",2016,3],
+  ["On the differences in the intraseasonal rainfall variability between western and eastern Central Africa: Case of 25–70-day oscillations","A Tchakoutio, A Nzeukou","Journal of Geoscience and Environment Protection, 4, 141-158",2016,2],
+  ["Comparing the patterns of 20–70 days intraseasonal oscillations over Central Africa during the last three decades","AT Sandjon, A Nzeukou, C Tchawoua, B Sonfack, T Siddi","Theoretical and Applied Climatology, 118(1), 319-329",2014,19],
+  ["A comparative analysis of intraseasonal atmospheric variability in OLR and 1DD GPCP rainfall data over Central Africa","AT Sandjon, A Nzeukou, C Tchawoua, FM Kamga, D Vondou","Theoretical and Applied Climatology, 116(1), 37-49",2014,17],
+  ["On the Differences in the Intraseasonal Rainfall Variability between Western and Eastern Central Africa: Case of 10–25-Day Oscillations","AT Sandjon, A Nzeukou, C Tchawoua, T Siddi","Journal of Climatology, 2014(1), 434960",2014,11],
+  ["Comparison between vegetation and rainfall of bioclimatic ecoregions in central Africa","S Rousvel, A Nzeukou, L Andre, S Tengeleng, TS Alain, K Armel","Atmosphere, 4(4), 411-427",2013,40],
+  ["Intraseasonal atmospheric variability and its interannual modulation in central Africa","AT Sandjon, A Nzeukou, C Tchawoua","Meteorology and Atmospheric Physics, 117(3), 167-179",2012,48],
+  ["Seasonal variations in the diurnal patterns of convection in Cameroon–Nigeria and their neighboring areas","DA Vondou, A Nzeukou, A Lenouo, F Mkankam Kamga","Atmospheric Science Letters, 11(4), 290-300",2010,52],
+  ["Diurnal cycle of convective activity over the West of Central Africa based on Meteosat images","DA Vondou, A Nzeukou, FM Kamga","International Journal of Applied Earth Observation and Geoinformation, 12",2010,23]
+ ]],
+ ["Hydrologie, énergie, apprentissage profond et aide à la décision", [
+  ["Geospatial parametric approach for identifying optimal sites for wind-solar hybrid energy systems","NA Mbufua, PT Kapen, F Ngapgue, AN Takougang","Results in Engineering, 106448",2025,6],
+  ["Advancing multivariate time series similarity assessment: an integrated computational approach","FBN Tonle, HEZ Tonnang, MMZ Ndadji, MT Tchendji, A Nzeukou, et al.","IEEE Access, 13, 114639-114656",2025,2],
+  ["A novel integrated computational approach for agroecological similarity","FBN Tonle, HEZ Tonnang, MMZ Ndadji, MT Tchendji, A Nzeukou, S Niassy","Environmental Modelling &amp; Software, 191, 106494",2025,5,"10.1016/j.envsoft.2025.106494"],
+  ["A road map for developing novel decision support system (DSS) for disseminating integrated pest management (IPM) technologies","FBN Tonle, S Niassy, MMZ Ndadji, MT Tchendji, A Nzeukou, BT Mudereri, et al.","Computers and Electronics in Agriculture, 217, 108526",2024,80],
+  ["Two-level deep learning ensemble model for forecasting hydroelectricity production","NK Tebong, T Simo, AN Takougang","Energy Reports, 10, 2793-2803",2023,9],
+  ["STL-decomposition ensemble deep learning models for daily reservoir inflow forecast for hydroelectricity production","NK Tebong, T Simo, AN Takougang, PH Ntanguen","Heliyon, 9(6), e16456",2023,35],
+  ["Application of deep learning algorithms to confluent flow-rate forecast with multivariate decomposed variables","NK Tebong, T Simo, AN Takougang, AT Sandjon, NP Herve","Journal of Hydrology: Regional Studies, 46, 101357",2023,11],
+  ["Monthly predicted flow values of the Sanaga River in Cameroon using neural networks applied to GLDAS, MERRA and GPCP data","S Tengeleng, A Nzeukou, K Armel, TS Alain, S Théophile, D Cedrigue","Journal of Water Resources and Ocean Science, 3(2), 22-29",2014,2]
+ ]],
+ ["Réseaux de capteurs sans fil et Internet des objets", [
+  ["Data-Driven Intelligent Approach for Intrusion Detection in IoT Environments","E Fotsing, S Nguendap, MA Hamdane, A Nzeukou, JP Lienou","OkIP Books",2025,null],
+  ["A lossless distributed data compression and aggregation methods for low resources wireless sensors platforms","EF Tagne, HM Kamdjou, A El Amraoui, A Nzeukou","Wireless Personal Communications, 128(1), 621-643",2023,19],
+  ["DDCA-WSN: A distributed data compression and aggregation approach for low resources wireless sensors networks","E Tagne Fute, HM Kamdjou, A El Amraoui, A Nzeukou","International Journal of Wireless Information Networks, 29(1), 80-92",2022,16],
+  ["The Transferable Belief Model for Network Performance Reliability Analysis in Wireless Sensor Networks","ET Fute, HM Kamdjou, A El Amraoui, A Nzeukou","20th International Conference on Wireless Networks (ICWN'21)",2021,null],
+  ["The transferable belief model for failure prediction in wireless sensor networks","HM Kamdjou, E Tagne Fute, A El Amraoui, A Nzeukou","SN Computer Science, 2(4), 269",2021,4],
+  ["A low-resources hardware-based audio data compression scheme for wireless sensors networks","H Kamdjou, E Fute, A El Amraoui, A Nzeukou","International Journal of Computer Applications, 174(32), 13-18",2021,1],
+  ["An Efficient Data Compression Approach based on Entropic Coding for Network Devices with Limited Resources","EF Tagne, HM Kamdjou, AB Bomgni, A Nzeukou","European Journal of Electrical Engineering and Computer Science, 3(5)",2019,10]
+ ]],
+ ["Communication par lumière visible et chiffrement", [
+  ["Enhanced security in lossless audio encryption using zigzag scrambling, DNA coding, SHA-256, and Hopfield networks: a practical VLC system implementation","SBN Fotso, WN Atchoffo, AC Nzeukou, JH Talla Mbé","Multimedia Tools and Applications, 84(23), 27091-27125",2025,6],
+  ["Experimental implementation of chaos-based video encryption using visible light communication technology","SB Nono Fotso, JH Talla Mbé, JE Takotue, AC Nzeukou Takougang, et al.","Applied Optics, 64(9), C101-C118",2025,5],
+  ["Implementation of a Full-Duplex Visible Light Communication System","SBN Fotso, JHT Mbe, AR Ndjiongue, AC Nzeukou","",2024,null],
+  ["Chaotic image encryption scheme based on improved z-order curve, modified Josephus problem, and RNA operations: an experimental Li-Fi approach","SBN Fotso, JH Talla Mbé, WN Atchoffo, AC Nzeukou, AR Ndjiongue","Complexity, 2024(1), 2910833",2024,8]
+ ]],
+ ["Systèmes dynamiques non linéaires et chaos", [
+  ["Dynamic Study and Microcontroller Realization of a Single Fractional-Order Hopfield Neuron Model Under Autapse and Electromagnetic Radiation Effects","ALM Biamou, VK Tamba, VT Pham, G Grassi, FK Tagne, ACN Takougang","International Journal of Circuit Theory and Applications, 54(9), 4514-4536",2026,null],
+  ["Fractional-order bi-Hopfield neuron coupled via a multistable memristor: Complex neuronal dynamic analysis and implementation with microcontroller","VK Tamba, ALM Biamou, VT Pham, G Grassi, FK Tagne, ACN Takougang","AEU – International Journal of Electronics and Communications, 191, 155661",2025,15],
+  ["Hidden extreme multistability in a smooth flux-controlled memristor based four-dimensional chaotic system and its application in image encryption","V Kamdoum Tamba, ALM Biamou, FK Tagne, ACN Takougang, HB Fotsin","Physica Scripta, 99(2), 025210",2024,16],
+  ["Fractional-order-induced symmetric multi-scroll chaotic attractors and double bubble bifurcations in a memristive coupled Hopfield neural networks","ALM Biamou, VK Tamba, FK Tagne, ACN Takougang","Chaos, Solitons &amp; Fractals, 178, 114267",2024,57],
+  ["Initial states-induced complex behaviors in a memristive coupled Hopfield neural network model and its application in biomedical image encryption","ALM Biamou, V Kamdoum Tamba, GCG Kuate, FK Tagne, AC Nzeukou Takougang, et al.","Physica Scripta, 99(1), 015215",2024,19],
+  ["Hidden extreme multistability generated from a novel memristive two-scroll chaotic system","VK Tamba, FK Tagne, ALM Biamou, MC Nkeing, AN Takougang","Mem-Elements for Neuromorphic Circuits with Artificial Intelligence",2021,9],
+  ["Dynamic analysis of a snap oscillator based on a unique diode nonlinearity effect, offset boosting control and sliding mode control design for global chaos synchronization","SFT Tchinda, G Mpame, ACN Takougang, VK Tamba","Journal of Control, Automation and Electrical Systems, 30(6), 970-984",2019,12]
+ ]],
+ ["Autres travaux", [
+  ["Study of Water Absorption in Raffia vinifera Fibres from Bandjoun, Cameroon","NRS Tagne, E Njeugna, M Fogue, JY Drean, A Nzeukou, D Fokwa","The Scientific World Journal, 2014, 912380",2014,3]
+ ]]
+];
+const dot = s => s.split(", ").map(n => n.replace(/^([A-Z]{1,4}) /, (m,i) => i.split("").join(".") + ". ")).join(", ");
+const bold = s => dot(s).replace(/\bA\.(?:C\.)?(?:N\.)? (?:Nzeukou(?: Takougang)?|Takougang)/, m => "<strong style='color:var(--ink)'>"+m+"</strong>");
+document.getElementById("npub").textContent = P.reduce((n,[,l]) => n + l.length, 0);
+const $ = id => document.getElementById(id);
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+$("f-theme").innerHTML = '<option value="">Tous les thèmes</option>' + P.map(([t],i) => `<option value="${i}">${t}</option>`).join("");
+const item = ([t,a,j,y,c,d]) => `<li>${c==null?"":`<span class="cite">${c} cit.</span>`}<span class="t">${t}</span><span class="a">${bold(a)}</span> — ${j?`<span class="j">${j}</span>, `:""}${y}.${d?` <a href="https://doi.org/${d}" target="_blank" rel="noopener">DOI</a>`:""}</li>`;
+function render(){
+  const q = norm($("f-q").value.trim()), th = $("f-theme").value, sort = $("f-sort").value;
+  const [y0,y1] = $("f-period").value.split("-").map(Number);
+  const first = $("f-first").checked;
+  const ok = p => (!q || norm(p.slice(0,4).join(" ")).includes(q))
+    && (!y0 || (p[3] >= y0 && p[3] <= y1))
+    && (!first || /^(A|AC|ACN|AN) (Nzeukou|Takougang)/.test(p[1]));
+  const cmp = sort === "cit" ? (x,y) => (y[4]||0) - (x[4]||0) || y[3] - x[3] : sort === "old" ? (x,y) => x[3] - y[3] : (x,y) => y[3] - x[3];
+  let n = 0, html = "";
+  P.forEach(([theme, list], i) => {
+    if (th !== "" && +th !== i) return;
+    const l = list.filter(ok).sort(cmp);
+    if (!l.length) return;
+    n += l.length;
+    html += `<h3 class="pub-theme">${theme} <small>(${l.length})</small></h3><ol class="pubs">${l.map(item).join("")}</ol>`;
+  });
+  $("publist").innerHTML = html || '<p class="none">Aucune publication ne correspond à ces filtres.</p>';
+  $("f-count").textContent = n + (n > 1 ? " publications affichées" : " publication affichée");
+}
+["f-q","f-theme","f-period","f-sort","f-first"].forEach(id => $(id).addEventListener("input", render));
+$("f-reset").addEventListener("click", () => { $("f-q").value = ""; $("f-theme").value = ""; $("f-period").value = ""; $("f-sort").value = "new"; $("f-first").checked = false; render(); });
+render();
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
